@@ -1,0 +1,26 @@
+.search{
+  width: 100vw;
+  background-color: var(--color__two);
+  padding: 10px 0;
+  .search__tittle{
+    color: white;
+    text-align: center;
+    font-size: 1.875rem;
+  }
+  .search__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include media('tablet'){
+    .search__form{
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.5fr;
+    }
+  }
+  @include media('desktop'){
+    .search__form{
+      padding: 0px 110px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+.hotels__details{
+  width: 100vw;
+  &__back{
+    background-color: var(--color__two);
+    color: white;
+    height: 60px;
+    .container {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &__name{
+      p{
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 14px;
+      }
+      h2{
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+    &__button{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      a{
+        margin-top: 5px;
+      }
+    }
+  }
+  &__location{
+    background-color: #D7D8DB;
+    color: var(--color__two);
+    .container{
+      gap: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    &__name{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      svg {
+        height: 18px;
+      }
+    }
+    &__rank{
+      display: flex;
+      align-items: center;
+      min-width: 120px;
+      gap: 10px;
+      .star{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 14px;
+        }
+        span{
+          color: var(--color__one);
+        }
+      }
+      p:nth-child(2){
+        font-weight: bold;
+        background-color: var(--color__two);
+        color: white;
+        padding: 0 7px;
+        font-size: 20px;
+        border-radius: 7px;
+      }
+    }
+  }
+  &__collage{
+    display: flex;
+    width: 100%;
+  }
+  &__description{
+    position: relative;
+    &__title{
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--color__two);
+      margin-bottom: 10px;
+      &__2 {
+        font-size: 16px;
+        color: var(--color__two);
+        margin-bottom: 5px;
+      }
+    }
+    &__p{
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color__two);
+      line-height: 16px;
+      margin-bottom: 15px;
+    }
+    &__separator{
+      position: relative;
+      margin: 0 -50px;
+      height: 2px;
+      border-color: var(--color__one);
+    }
+    &__features{
+      margin-top: 10px;
+      margin-bottom: 5px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .fill__icon {
+        fill: var(--color__one);
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+        p{
+          font-size: 14px;
+        }
+      }
+      @include media ("tablet"){
+        div {
+          padding: 15px 0;
+        }
+      }
+      @include media ("desktop"){
+        grid-template-columns: repeat(4, 1fr);
+        div {
+          padding: 25px 0;
+        }
+      }
+    }
+    .container__policy{
+      margin-top: 15px;
+      display: grid;
+      gap: 5px;
+      grid-template-columns: 1fr;
+      .policy__item {
+        margin-bottom: 10px;
+        h3 {
+          color: var(--color__two);
+          font-size: 20px;
+          font-weight: 700px;
+        }
+        .list__plicy {
+          p {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color__two);
+            padding: 10px 0;
+          }
+        }
+      }
+      @include media ("tablet"){
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media ("desktop"){
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+  &__section{
+    &.calendar {
+      padding: 10px 0;
+      background-color: #ECECEF;
+      .react-calendar{
+        padding: 35px;
+        -webkit-box-shadow: 1px 0px 10px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 0px 10px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px auto;
+        width: 100%;
+        max-width: 540px;
+      }
+      .hotels__details__description__agendar {
+        width: 100%;
+        button {
+          width: 100%;
+        }
+      }
+      @include media("tablet"){
+        width: 100%;
+        .react-calendar{
+          width: 100%;
+          max-width: 100%;
+        }
+        .hotels__details__description__agendar {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          button {
+            width: 200px;
+          }
+        }
+      }
+      @include media("desktop"){
+        .container_calendar {
+          display: grid;
+          grid-template-columns: 3fr 1fr;
+          gap: 15px;
+          align-items: center;
+          justify-content: center;
+        }
+        .hotels__details__description__agendar {
+          flex-direction: column;
+          width: 250px;
+          gap: 15px;
+          button {
+            width: 200px;
+          }
+        }
+      }
+    }
+    &.maps {
+      .map-container{
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}

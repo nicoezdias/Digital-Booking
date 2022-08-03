@@ -1,0 +1,60 @@
+.gallery{
+  position: relative;
+  grid-gap: 10px;
+  box-sizing: border-box;
+  display: none;
+  gap: 10px;
+  grid-template-columns: repeat(2,1fr);
+  padding: 0 2px;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  .primary__img {
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgb(0 0 0 / 25%);
+    box-sizing: border-box;
+    height: 390px;
+    width: 100%;
+  }
+  .secondary__img {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 195px;
+    grid-gap: 5px;
+    gap: 5px;
+    width: 100%;
+    height: 390px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  @include media('tablet'){
+    display: grid;
+  }
+  .buttonMore {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+  }
+}
+
+.carousel{
+  width: 100%;
+  height: 100%;
+  .thumbnails{
+    height: 100px;
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  -webkit-user-select: none;
+  background-color: #383b5812;
+}
+
+@import './module/mixin';
+@import './module/theme';
+@import './module/container';
+@import './module/header';
+@import './module/search';
+@import './module/categories';
+@import './module/card';
+@import './module/hotels';
+@import './module/hotelsDetails';
+@import './module/form';
+@import './module/displayUser';
+@import './module/gallery';
+@import './module/booking';
+@import './module/modal';
+@import './module/admin';
+@import './module//links';
+@import './module/bookingConfirm';
+@import './module/antdnew';
+
+/* Atomos */
+@import './module/navBar';
+@import './module/logo';
+@import './module/input';
+@import './module/button';
+@import './module/calendar';
+@import './module/social';

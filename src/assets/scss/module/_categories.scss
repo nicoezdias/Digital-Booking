@@ -1,0 +1,27 @@
+.categories{
+  width: 100vw;
+  background-color: white;
+  padding: 10px 0;
+  .categories__container{
+    display: grid;
+    gap: 19px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 347px), 1fr));
+    @include media('tablet'){
+      gap: 21px 14px;
+    }
+    @include media('desktop'){
+      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 235px), 1fr));
+    }
+    @include media('desktopMidder'){
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    }
+  }
+  .categories__title{
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color__two);
+  }
+}

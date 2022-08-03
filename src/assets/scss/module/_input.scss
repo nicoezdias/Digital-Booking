@@ -1,0 +1,127 @@
+input, select, textarea {
+  height: 40px;
+  padding: 0 0 0 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  &::placeholder {
+    color: var(--color__three);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &:focus {
+    outline: none;
+  }
+  &.error {
+    border: 1px solid #ff0000;
+    background-color: #ffe1e1ca;
+    &:focus{
+      outline: none;
+      box-shadow: 0px 1px 5px rgba(255, 0, 0, 0.5);
+    }
+  }
+}
+
+input[type='checkbox'] {
+  box-shadow: none;
+}
+
+option {
+  font-size: 10px;
+}
+
+.text__suggestion {
+  position: relative;
+  min-width: 180px;
+  width: 100%;
+  z-index: 2;
+  .input__suggestion {
+    width: 100%;
+    padding: 0 0 0 37px;
+    &__id {
+      display: none;
+    }
+  }
+  .icon__suggestion{
+    position: absolute;
+    opacity: 0.5;
+    height: 26px;
+    top: calc((40px - 26px) / 2);
+    left: 9px;
+    .fill__icon {
+      fill: var(--color__three);
+    } 
+  }
+
+  .data__suggestion{
+    margin-top: 5px;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .data__item{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 100%;
+      padding: 12px 0 12px 14px;
+      transition: all 0.3s ease;
+      &:hover{
+        background-color: rgb(227, 227, 227);
+        .icon__item{
+          .fill__icon{
+            fill: var(--color__one);
+          }
+        }
+      }
+      .icon__item{
+        margin: 0 10px 0 0;
+      }
+      div {
+        p:nth-child(1){
+          font-size: 14px;
+          font-weight: 700;
+          color: #000
+        }
+        p:nth-child(2){
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--color__three);
+        }
+      }
+      &__id{
+        display: none;
+      }
+    }
+    .data__divisor{
+      margin: auto;
+      width: 90%;
+      border-bottom: 1px solid var(--color__one);
+    }
+  }
+}
+
+.input__icon{
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  .icon__input{
+    position: absolute;
+    opacity: 0.5;
+    height: 26px;
+    top: calc((40px - 26px) / 2);
+    left: 9px;
+    .fill__icon {
+      fill: var(--color__three);
+    } 
+  }
+  .input__inputicon{
+    width: 100%;
+    padding: 0 0 0 37px;
+  }
+}

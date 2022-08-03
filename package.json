@@ -1,21 +1,44 @@
 {
-  "name": "digital-booking",
+  "name": "myapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@react-google-maps/api": "^2.12.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "antd": "^4.21.4",
+    "axios": "^0.27.2",
+    "react": "^18.1.0",
+    "react-alice-carousel": "^2.6.1",
+    "react-calendar": "^3.7.0",
+    "react-carousel-minimal": "^1.4.1",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.52.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{jsx, js}",
+      "src/App.jsx",
+      "!src/util/*.{jsx, js}",
+      "src/context/*.{jsx, js}",
+      "src/pages/*.{jsx, js}",
+      "!src/index.js",
+      "!src/reportWebVitals.js",
+      "!src/components/atoms/Card.jsx",
+      "!src/components/atoms/DisplayUser.jsx",
+      "!src/pages/Home.jsx",
+      "!src/service/Home.jsx",
+      "!src/pages/Home.jsx",
+      "!src/components/atoms/Features.jsx"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +57,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "jest": "^28.1.1"
   }
 }

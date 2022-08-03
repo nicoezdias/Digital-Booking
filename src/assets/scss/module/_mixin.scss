@@ -1,0 +1,18 @@
+$deviceSizes: (
+  tablet: 768px,
+  desktop: 1024px,
+  desktopMidder: 1260px,
+  desktopLarge: 1440px,
+  fullhd: 1920px
+);
+
+@mixin media ($breakpoint) {
+  @each $breakpoints,
+  $size in $deviceSizes {
+    @if $breakpoint ==$breakpoints {
+      @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  }
+}

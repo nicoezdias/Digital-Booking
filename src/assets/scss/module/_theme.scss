@@ -1,0 +1,13 @@
+$color__one: #e98d1d;
+$color__one-hover: #c77a1c;
+$color__two: #383B58;
+$color__three: #545776;
+$color__four: #F3F1ED;
+
+body{
+  --color__one: #{$color__one};
+  --color__one-hover: #{$color__one-hover};
+  --color__two: #{$color__two};
+  --color__three: #{$color__three};
+  --color__four: #{$color__four};
+}

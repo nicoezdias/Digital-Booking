@@ -1,0 +1,108 @@
+.content_auth {
+  width: 100%;
+  min-height: 250px;
+  height: calc(100% - 58px);
+  .form_title{
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color__one);
+  }
+}
+
+.form {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  .message_error{
+    display: none;
+    color: #FF0000;
+    text-align: center;
+    padding: 10px 5px;
+    background-color: #ff000025;
+    border: 1px solid #FF0000;
+    &--show {
+      display: block;
+    }
+  }
+  .form_title{
+    text-align: center;
+  }
+  .form_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      margin-bottom: 8px;
+      color: var(--color__two);
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .form_group_error{
+      color: #FF0000;
+      font-size: 12px;
+      font-weight: 500;
+      margin: 5px 0 0 0;
+      text-align: right;
+      height: 5px;
+    }
+    &--check {
+      flex-direction: row;
+      gap: 15px;
+      .fill__icon{
+        fill: var(--color__one);
+      }
+    }
+  }
+  .form_buttom {
+    margin-top: 10px;
+  }
+  @include media('tablet'){
+    width: 380px;
+  }
+  @include media('desktop'){
+    &.singup {
+      grid-template-areas: "title title" "name1 lastname1" "input input" "input input" "input input" "buttom buttom";
+      grid-template-columns: 1fr 1fr;
+      .form_title{
+        grid-area: title;
+      }
+      .form_group{
+        grid-column: span 2;
+      }
+      div:nth-child(2){
+        grid-area: name1;
+      }
+      div:nth-child(3){
+        grid-area: lastname1;
+      }
+      button {
+        grid-area: buttom;
+      }
+    }
+  }
+  &--admin {
+    display: grid;
+    width: 100%;
+    @include media('tablet'){
+      grid-template-columns: repeat(2, 1fr);
+      .colspan{
+        grid-column: 1 / span 2;
+      }
+    }
+  }
+}
+
+.password_eyes {
+  position: relative;
+  input {
+    width: 100%
+  }
+  svg {
+    cursor: pointer ;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+}

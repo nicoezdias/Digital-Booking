@@ -1,0 +1,37 @@
+[
+    {
+        "country": "Argentina",
+        "city": "Buenos Aires",
+        "code": "ABS"
+    },
+    {
+        "country": "Argentina",
+        "city": "Chaco",
+        "code": "ACH"
+    },
+    {
+        "country": "Argentina",
+        "city": "Formosa",
+        "code": "AF"
+    },
+    {
+        "country": "Colombia",
+        "city": "Barranquilla",
+        "code": "BAQ"
+    },
+    {
+        "country": "Colombia",
+        "city": "Bogota",
+        "code": "BOG"
+    },
+    {
+        "country": "Colombia",
+        "city": "Medellin",
+        "code": "MDE"
+    },
+    {
+        "country": "Colombia",
+        "city": "Santa Marta",
+        "code": "SMR"
+    }
+]

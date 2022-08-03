@@ -1,0 +1,26 @@
+.brand{
+  display: flex;
+  width: auto;
+  height: 100%;
+  align-items: center;
+  .brand__link{
+    display: flex;
+    text-decoration: none;
+    .brand__icon{
+      .fill__icon{
+        fill: var(--color__one);
+      }
+    }
+    .brand__slogan{
+      display: none;
+      align-self: flex-end;
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color__two);
+      @include media('desktop'){
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.admin_content {
+  width: 100vw;
+
+  &--back {
+   background-color: var(--color__two);
+   color: white;
+   height: 60px;
+  }
+
+  &--form{
+   background-color: #E9EAED;
+   h3 {
+    color: var(--color__two);
+    margin: 15px 0 5px 0;
+   }
+  }
+
+  &--card {
+   background-color: white;
+   padding: 5px 10px;
+   border-radius: 8px;
+   &-no-bg {
+    background-color: transparent;
+   }
+  }
+}

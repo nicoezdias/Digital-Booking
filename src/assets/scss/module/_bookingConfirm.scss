@@ -1,0 +1,40 @@
+    .container_confirmation {
+        height: calc(100vh - 80px - 58px);
+
+        .card_confirmation {
+            
+            background-color: var(--color__four);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            padding: 0% !important;
+            max-width: none !important;
+            height: 100%;
+
+
+            &_content {
+                margin: 10px;
+                height: 30vh;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                text-align:center;
+                padding: 30px !important;
+                border-radius: 8px;
+                border: 1px solid #DFE4EA;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                h4{
+                    color: var(--color__one)
+                }
+                .card__detail__father__content__button__confirma {
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+                }
+                p{
+                    margin: 10px 0;
+                }
+            }
+        }
+    }

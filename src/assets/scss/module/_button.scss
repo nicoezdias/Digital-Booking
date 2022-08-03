@@ -1,0 +1,30 @@
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 164px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid var(--color__one);;
+  border-radius: 5px;
+  color: var(--color__one);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin: 0;
+  cursor: pointer;
+  &:hover{
+    background: var(--color__one);
+    color: #FFFFFF;
+  }
+  &.fill{
+    background: var(--color__one);
+    color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    &:hover{
+      background: var(--color__one-hover);
+    }
+  }
+}

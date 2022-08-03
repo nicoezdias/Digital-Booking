@@ -1,0 +1,17 @@
+.hotels{
+  width: 100vw;
+  background-color: var(--color__two);
+  padding: 10px 0;
+  .hotels__title{
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  .hotels__container{
+    display: grid;
+    gap: 19px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 482.5px), 1fr));
+  }
+}
