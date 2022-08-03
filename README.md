@@ -1,6 +1,6 @@
 # Digital-Booking
 
-You can find the Back End of the project in the [Api-Booking](https://github.com/nicoezdias/Api-Booking) repository
+You can find the Back End of the project in [Api-Booking](https://github.com/nicoezdias/Api-Booking).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
